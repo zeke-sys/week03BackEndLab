@@ -43,10 +43,49 @@ public class Week03ArraysPlusMethods {
 		}
 		
 		
-		//Advanced Topic - Creating a more robust Grade Book - one that takes more students, and store their grades inside the Student Object.
+		
+		//calling the below methods/functions
+		
+		int firstNumber = 3; //variable declarations - visible in Main only
+		int secondNumber = 7;
+		
+		sumTwoNumsPrintResult(firstNumber, secondNumber); //call to first method - passing variables into this Method as parameters!
+	
+		int result = 0; //additional variable declaration - visible in main only
+	
+		result = sumTwoNumsReturnResult(firstNumber, secondNumber); //call to second method
+	
+		System.out.println("The sum is: " + result);
+		
+		//because the methods have been created, we can invoke them and pass different or additional values
+		System.out.println("The new sum is: " + (result + 8));
 		
 		
-
 	}
+	
+		
+		//Let's define a method
+		
+		public static void sumTwoNumsPrintResult (int number1, int number2) {
+			int sum = 0;
+			sum = number1 + number2;
+			
+			System.out.println("The sum is: " + sum); //no return statement because the returnType is void! Variables only readable within main
+		}
+		
+		//if we want to return a result
+		
+		public static int sumTwoNumsReturnResult (int num1, int num2) {
+		
+			int mySum = 0;
+			mySum = num1 + num2;
+			
+			return mySum;
+			
+		}
+		
+		
+		
+				
 
-}
+} //end of Main()
