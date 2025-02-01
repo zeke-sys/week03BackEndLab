@@ -287,9 +287,13 @@ public class Week03Lab {
 		
 		charArray(userWord);
 		
+		//--------------
 		
-		
-		
+		//Using clone
+		int[] arr = { -11, 43, 901, 72, -5};
+		int[] arr2 = arr.clone();
+
+		System.out.println("- Clone - " + arr2[3]);
 		
 		
 		
